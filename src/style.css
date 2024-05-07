@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'Futura Condensed';
+  src: url('../src/futura-condensed.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Futura Condensed';
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+nav {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 100%;
+  outline: 2px solid white;
+  outline-offset: -5px;
+  padding: .5rem;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+  margin: 0 auto;
+  max-width: 500px;
+  list-style: none ;
+
+  display: flex;
+}  
+
+nav ul li {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+}
+
+nav button {
+  flex: 1;
+  color: white;
+  font-size: 2rem;
+  border-style: none;
+  background-color: inherit;
+  padding: 1rem;
+}
+
+.active {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+#content {
+  height: 100vh;
+  font-size: 1.5rem;
+  border-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid white;
+  font-size: 3rem;
+  padding: 1rem;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+nav button:hover,
+.hero p.answer:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: .5rem;
+}
+
+.menu {
+  min-width: 500px;
+
+  display: flex;
+  gap: 2rem;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid white;
+  font-size: 3rem;
+  /* width: 500px; */
+  padding: 2rem;
+  width: 100%;
+  font-size: 2.5rem;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card p {
+  width: 100%;  
+
+  display: flex;
+  justify-content: center;
+}
+
+.food-pic {
+  height: 200px;
+  width: auto;
+  padding: 1rem;
+}
+
+.card .ingredients {
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+.locations {
+  max-width: 90%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: .5rem;
+  padding: .5rem;
+}
+
+.location-card{
+  font-size: 1.25rem;
+  border: 2px solid white;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+}
+
+h1 {
+  border: 2px solid white;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
